@@ -1,0 +1,25 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[abnTeX2 2013]{abntex2modelo}
+\abntrefinfo{abnTeX2}{ABNTEX2}{2013}
+{ABNTEX2. \emph{Modelo Can\^onico de Trabalho Acad\^emico com abnTeX2}.
+[S.l.], 2013. Dispon{\'\i}vel em: $<$http://code.google.com/p/abntex2/$>$.
+  Acesso em: 10.7.2013.}
+
+\bibitem[Nilsson e Riedel 2008]{nilsson}
+\abntrefinfo{Nilsson e Riedel}{NILSSON; RIEDEL}{2008}
+{NILSSON, J.~W.; RIEDEL, S. \emph{Circuitos El\'etricos}. 8. ed. New York:
+  Pearson, 2008. 592~p.}
+
+\bibitem[Rover e Pereira 2013]{livro-unoesc}
+\abntrefinfo{Rover e Pereira}{ROVER; PEREIRA}{2013}
+{ROVER, A.; PEREIRA, D. D.~S. \emph{Diretrizes para elabora\c{c}\~ao de
+  trabalhos cient\'ificos}. Joa{\c{c}}aba: Editora Unoesc, 2013. 143~p.
+  (S\'erie Metodologia do trabalho cient\'ifico).}
+
+\end{thebibliography}

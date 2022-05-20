@@ -1,0 +1,163 @@
+%=======================================================================
+%
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico  em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos
+% ------------------------------------------------------------------------
+%Customização Unoesc
+% ------------------------------------------------------------------------
+% Autor:  Jonas Alessi(alessi.jonas@gmail.com
+% Versão: 10 de Julho 2013.
+% Edição: TexStudio
+% Codificação: UTF-8
+% LaTeX:  abnTeX2
+%
+%=======================================================================
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte	
+	oneside,          % não imprimir em verso e anverso, oposto do twoside 
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	brazil			% o último idioma é o principal do documento
+	,sumario=tradicional,
+	]{abntex2-unoesc}
+
+
+\include{config_inicial}
+
+%----Include da capa é fora do documento 
+\include{pretextuais/capa}
+%---
+
+\begin{document}
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+%--- CAPA ----
+\imprimircapa
+
+% --- FOLHA DE ROSTO
+\imprimirfolhaderosto
+% Na versão final inclua a ficha catalográfica que deve ser solicitada na biblioteca
+% \imprimirfolhaderosto
+%\includepdf{pretextuais/ficha_catalografica}
+
+% Inserir FOLHA DE APROVAÇÃO
+% NA VERSÃO FINAL
+% retirar a folha de aprovação e incluir a assinada digitalizada em pdf
+%\includepdf{pretextuais/folha}
+\include{pretextuais/folhadeaprovacao}
+
+% DEDICATÓRIA
+\include{pretextuais/dedicatoria}
+
+% AGRADECIMENTO
+\include{pretextuais/agradecimentos}
+
+%EPÍGRAFE
+\include{pretextuais/epigrafe}
+
+% RESUMO
+\include{pretextuais/resumos}
+
+% lista de ilustrações
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% lista de quadros
+% --- 
+%PRECISO VER COMO FAZER O CONTROLE DE QUANDO TIVER MENOS Q 10 VAI PARA LISTA DE ILUSTRAÇÕES
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+% ---
+
+% LISTA DE TABELAS
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage  %-- força proxima pagina
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[ABNT] Associação Brasileira de Normas Técnicas
+  \item[CNPq] Conselho Nacional de Desenvolvimento Científico e Tecnológico
+  \item[IBGE] Instituto Brasileiro de Geografia e Estatística
+  \item[LCD] \textit{Liquid Crystal Dysplay} (Display de cristal líquido)
+\end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+\begin{simbolos}
+  \item[$ \Gamma $] Descrever o que o símbolo representa em seu trabalho. Exemplo abaixo.
+  \item[$ \omega $] Frequência angular [rad/s].
+  \item[$ \zeta $] Coeficiente de amortecimento.
+
+\end{simbolos}
+% ---
+
+% SUMARIO
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ------------------------------------------------------
+\textual
+% INTRODUÇÃO
+\include{conteudo/introducao}
+
+%FUNDAMENTAÇÃO TEÓRICA
+\include{conteudo/fundamentacao}
+
+%DESENVOLVIMENTO
+\include{conteudo/desenvolvimento}
+
+%RESULTADOS
+\include{conteudo/resultados}
+
+%CONCLUSÃO
+\include{conteudo/conclusao}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+
+\bibliography{referencias}
+
+%Apêndices
+\include{postextuais/apendice}
+
+%Anexos
+\include{postextuais/anexo}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+
+\printindex
+\end{document}

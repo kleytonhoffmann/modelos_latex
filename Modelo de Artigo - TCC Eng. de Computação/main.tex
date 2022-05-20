@@ -1,0 +1,37 @@
+%Modelo para escrita de artigos científicos do Trabalho de Conclusão de Curso da Engenharia de computação
+% Unoesc - Campus de Joaçaba
+
+%Se você é novo no latex, um bom lugar para começar é
+%https://pt.overleaf.com/learn
+\documentclass[10pt,conference,twocolumn]{unoesc} 
+\input{configuracoes/includes.tex}
+\input{configuracoes/config.tex}
+
+
+\begin{document}
+
+
+  \title{Título do TCC}
+  \author
+  {
+    \IEEEauthorblockN{Nome Sobrenome\\}
+    \IEEEauthorblockN{Orientador(a): Nome Sobrenome\\}
+    \IEEEauthorblockA{Universidade do Oeste de Santa Catarina - Unoesc\\
+                    CET - Área de Ciências Exatas e Tecnológicas \\
+                    Curso de Engenharia de Computação - 
+                    Campus de Joaçaba/SC}
+  }
+
+\maketitle
+
+\input{secoes/01-resumo.tex}
+\input{secoes/02-introducao.tex}
+\input{secoes/03-instrucoes-gerais.tex}
+\input{secoes/04-conclusao.tex}
+
+
+\printbibliography
+
+
+
+\end{document}

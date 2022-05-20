@@ -1,0 +1,73 @@
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{times}			    % Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{amsfonts}			% Símbolos
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\setitemize[0]{itemindent=0.4cm,itemsep=0pt}
+\setenumerate[0]{itemindent=0.5cm,itemsep=0pt}
+%------
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 					  % Paginas com as citações na bibl
+
+%Referência
+\usepackage[alf, 	
+			 		abnt-emphasize=bf,
+				    abnt-url-package=none,
+				    abnt-repeated-title-omit=yes,
+				    abnt-full-initials=yes,                                        %yes nome por extenso, no apenas iniciais
+					abnt-etal-list=3												%abreviar com mais de 3 autores
+]{abntex2/abntex2cite}				 														    % Citações padrão ABNT
+\usepackage{lipsum}							   								       % para geração de dummy text
+
+%\captionsetup[table]{justification=raggedright}
+% Configurações de aparência do PDF final
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.25cm}
+\linespread{1.5}
+
+%Espaçamento depois dos títulos
+\setlength{\afterchapskip}{\baselineskip}
+% %\setlength{\afterchapskip}{\lineskip}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0cm}  % tente também \onelineskip
+
+\hangcaption
+\captionstyle[\raggedright]{}
+
+%Estava mostrando nas referencias quais paginas estavam sendo referenciadas
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{}
+
+%Reduzir a fonte do caption
+\captionnamefont{\centering\ABNTEXfontereduzida}
+\captiontitlefont{\centering\ABNTEXfontereduzida}
+%Ajuste nas listas de tabela, ilustrações e quadros
+\setlength\cftbeforechapterskip{0pt}
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---

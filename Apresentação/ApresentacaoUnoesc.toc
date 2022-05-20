@@ -1,0 +1,7 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{\LaTeX }{2}{1}{1}
+\beamer@sectionintoc {2}{Forma de exibi\c c\~ao}{12}{1}{2}
+\beamer@sectionintoc {3}{Ambientes n\~ao matem\'aticos}{15}{1}{3}
+\beamer@sectionintoc {4}{Tabelas}{22}{1}{4}
+\beamer@sectionintoc {5}{Alinhamentos}{30}{1}{5}
+\beamer@sectionintoc {6}{Outros itens importantes}{34}{1}{6}

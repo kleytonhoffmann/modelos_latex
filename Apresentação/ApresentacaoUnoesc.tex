@@ -1,0 +1,974 @@
+% Apresentação Interna usando Beamer
+%
+% Introdução ao LaTeX
+%
+% Kleyton Hoffmann - UNOESC
+% pdf gerado com pdflatex
+
+\documentclass{beamer}
+\mode<presentation>
+%\mode<handout>% para impressão
+{
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+}
+
+\usepackage[english,brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}                       % para incluir figuras .eps
+\usepackage{pslatex}                        % fonte do texto melhor
+\usepackage{booktabs}                       % estilo mais bonito para tabela
+\usepackage{array}                          % para usar o tabular com mais opções
+\usepackage{amsmath}                        % AMS math
+\usepackage{bm}                             % para escrever letras gregas em negrito
+\usefonttheme[onlymath]{serif}
+
+\usepackage{color}
+
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{tikz}                           % para inserir gráficos TIKZ
+\usetikzlibrary{plotmarks}
+\usepackage{pgfplots}
+%\usepackage{pdfsync}
+\usepackage{fixltx2e}                       % para usar sub e sobre-escrito no modo texto
+\newcommand{\ts}{\textsubscript}            % texto subescrito no modo texto
+\newcommand{\itl}[1]{\textit{#1}}           % texto em itálico
+\newcommand{\un}[1]{\ensuremath{\,\mathrm{#1}}}     % unidade
+\newcommand{\und}{$\,$}                     % unidade no modo não-matemático
+
+\setbeamertemplate{bibliography item}[text]
+\usefonttheme[onlymath]{serif}              % fonte Serif (Computer Modern) em equações
+
+\title[V Simpósio das Engenharias]{\LaTeX - Elaboração de textos científicos}
+\author[Kleyton Hoffmann]{Professor: Kleyton Hoffmann}
+\institute{Universidade do Oeste de Santa Catarina\\
+           UNOESC\\ [\medskipamount]
+%\includegraphics[height=1.2cm]{figuras/eletrica}
+%\hspace{1cm}
+\includegraphics[height=1.3cm]{figuras/unoesc}
+}
+
+%\titlegraphic{\includegraphics[scale=0.05]{Figuras/LogoGRUCAD.pdf}}
+\date{Maio 2022}
+
+% Informações adicionais para o arquivo .pdf
+%\subject{}
+%\keywords{}
+
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Capa e Sumário %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\logo{\includegraphics[scale=0.125]{figuras/logo.png}}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\AtBeginSection[]
+{\begin{frame}
+	\frametitle{Sumário}
+	\small
+	\tableofcontents[currentsection,hideothersubsections]
+	\normalsize
+\end{frame}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Introdução %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{}
+\section{\LaTeX}
+%\subsection{\LaTeX}
+
+\begin{frame}
+TeX foi criado por Donald E. Knuth, com o objetivo de compor textos e fórmulas matemáticas.
+
+LaTeX é uma implementação da linguagem TeX, criada em 1978 por Leslie Lamport. Diferentemente de editores como Word, LaTeX não apresenta uma interface amigável nas primeiras interações. Por essa razão, muitas pessoas se perguntam:
+
+\textbf{Por quê deveria abandonar algo ``simples'' e adotar algo mais complexo?}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item O padrão matemático em TeX gera equações e funções corretamente formatadas. Em Word, o editor de equações está longe de ser ideal.
+
+\item TeX não apresenta bugs. O Word, como sabemos, está recheado de bugs.
+
+\item TeX é gratuito e livre.
+
+\item Em TeX, você pode comentar o seu código/texto no mesmo espaço em que seu conteúdo é gerado.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item TeX oferece uma linguagem completa. Ou seja: você pode criar funções que efetuam um procedimento para você (muitas dessas funções não podem ser criadas via macros em Word).
+
+\item Não há vírus de macros em TeX. Ou seja: maior segurança.
+
+\item Não há incompatibilidade de versões: se você criou um arquivo TeX em 1995, conseguirá abri-lo perfeitamente hoje.
+
+\item LaTeX oferece uma maneira independente de lidar com bibliografias. Nada de comprar EndNote ou algo parecido: toda a sua biblioteca de referências é mantida em um simples arquivo, ao qual você conecta citações.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Documentos em TeX são pequenos e rápidos.
+
+\item LaTeX é o padrão científico/acadêmico em diversas áreas do conhecimento e nos maiores centros acadêmicos do mundo.
+
+\item LaTeX gera documentos mais aprimorados esteticamente, com menos hifenizações e menos espaçamentos exagerados entre palavras.
+
+\item Seu pdf é gerado com uma estrutura interna, em que você acessa seções via links. Isso é feito automaticamente com um pacote.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Para começar a utilizar o LaTex devemos deixar de lado algo que os processadores de texto comuns nos proporcionam e estamos acostumados. 
+
+\vspace{1cm}
+
+WYSIWYG - What You See Is What You Get!
+
+\vspace{1cm}
+
+\includegraphics[height=4cm]{figuras/desespero}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+INSTALAÇÃO LATEX, PACOTES ABNT, E OUTROS PROGRAMAS ÚTEIS.
+\end{center}
+\end{frame}
+
+\begin{frame}
+Vamos começar por um pequeno exemplo:
+\vspace{1cm}
+
+$\backslash$documentclass\{article\}
+% esta linha ´e espec´?fica para
+% o Portugu^es e outras l´?nguas
+% com caracteres acentuados.
+
+$\backslash$usepackage[latin1]\{inputenc\}
+
+$\backslash$begin\{document\}
+
+Escreva seu texto aqui.
+
+$\backslash$end\{document\}
+\end{frame}
+
+
+
+\begin{frame}
+
+	
+	Compilador
+	
+	\url{www.miktex.org}
+	
+		\vspace{1cm}
+		
+	Editor
+	
+		\url{www.texstudio.org}
+		
+			\vspace{1cm}
+			
+	Editor/compilador online
+		
+			\url{www.overleaf.com}
+	
+
+	
+	
+\end{frame}
+
+
+%\section{Pacotes frequentemente utilizados}
+\begin{frame}
+	
+	Alguns dos pacotes frequentemente utilizados no preâmbulo:
+	
+	\vspace{1cm}
+	
+	$\backslash$usepackage\{graphicx\} - para incluir figuras.
+	
+	$\backslash$usepackage[brazil]\{babel\} - uso da língua portuguesa.
+	
+	$\backslash$usepackage\{color\} - para incluir cores.
+	
+	$\backslash$usepackage[latin]\{inputenc\} - traduz os acentos do português.
+	
+	$\backslash$usepackage\{here\} - exige que a figura fique no local especificado (utilizar [H]).
+	
+	$\backslash$usepackage\{url\} - para trabalhar com URL's no texto
+	
+	$\backslash$usepackage\{multirow\} - para fazer alterações nas tabelas
+\end{frame}
+
+\section{Forma de exibição}
+\begin{frame}
+	Formas de exibição:
+	
+	\vspace{1cm}
+	
+	$\backslash$textit\{itálico\} - \textit{itálico}
+	
+	$\backslash$textsl\{inclinado\} - \textsl{inclinado}
+	
+	$\backslash$textsc\{caixa alta\} - \textsc{caixa alta}
+	
+	$\backslash$texttt\{máquina de escreve\} - \texttt{máquina de escrever}
+	
+	$\backslash$textbf\{negrito\} - \textbf{negrito}
+	
+\end{frame}
+
+\begin{frame}
+	\{$\backslash$Huge Muito muito grande\} - {\Huge Muito muito grande}
+	
+	\{$\backslash$huge muito grande\} - {\huge muito grande}
+	
+	\{$\backslash$LARGE grande\} - {\LARGE  grande}
+	
+	\{$\backslash$Large grandinho\} - {\Large  grandinho}
+	
+	\{$\backslash$large grandinho\} - {\large  grandinho}
+	
+	\{$\backslash$small pequeno\} - {\small  pequeno}
+	
+	\{$\backslash$footnotesize muito pequeno\} - {\footnotesize  muito pequeno}
+	
+	\{$\backslash$scriptsize muito muito pequeno\} - {\scriptsize muito muito pequeno}
+\end{frame}
+
+\section{Ambientes não matemáticos}
+\begin{frame}
+	
+	Ambiente \textbf{itemize} : gera uma lista com entradas marcadas por um ponto.
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{itemize\}
+	
+	$\backslash$item fórmulas e equações matemáticas são facilmente editoradas;
+	
+	$\backslash$item equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+	
+	$\backslash$item o \LaTeXe é gratuito e pode ser obtido pela internet. 
+	
+	$\backslash$end\{itemize\}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambiente \textbf{itemize} : gera uma lista com entradas marcadas por um ponto.
+	
+	\vspace{1cm}
+	
+	\begin{itemize}
+		
+		\item fórmulas e equações matemáticas são facilmente editoradas;
+		
+		\item equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+		
+		\item o \LaTeXe é gratuito e pode ser obtido pela internet 
+		
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambiente \textbf{enumerate} : gera uma lista enumerada.
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{enumerate\}
+	
+	$\backslash$item fórmulas e equações matemáticas são facilmente editoradas;
+	
+	$\backslash$item equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+	
+	$\backslash$item o \LaTeXe é gratuito e pode ser obtido pela internet. 
+	
+	$\backslash$end\{enumerate\}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambiente \textbf{enumerate} : gera uma lista enumerada.
+	
+	\vspace{1cm}
+	
+	\begin{enumerate}
+		
+		\item fórmulas e equações matemáticas são facilmente editoradas;
+		
+		\item equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+		
+		\item o \LaTeXe é gratuito e pode ser obtido pela internet 
+		
+	\end{enumerate}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambiente \textbf{description} : gera uma lista cujas entradas podem ser declaradas.
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{description\}
+	
+	$\backslash$item[i)] fórmulas e equações matemáticas são facilmente editoradas;
+	
+	$\backslash$item[ii)] equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+	
+	$\backslash$item[iii)] o \LaTeXe é gratuito e pode ser obtido pela internet. 
+	
+	$\backslash$end\{description\}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambiente \textbf{description} : gera uma lista cujas entradas podem ser declaradas.
+	
+	\vspace{1cm}
+	
+	\begin{description}
+		
+		\item[i)] fórmulas e equações matemáticas são facilmente editoradas;
+		
+		\item[ii)] equações, citações, figuras, tabelas, etc podem ser indexadas automaticamente;
+		
+		\item[iii)] o \LaTeXe é gratuito e pode ser obtido pela internet 
+		
+	\end{description}
+	
+\end{frame}
+
+\section{Tabelas}
+
+\begin{frame}
+	Os seguintes comandos geram uma tabela:
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{tabular\}\{formato\}
+	
+	$\backslash$end\{tabular\}
+	
+	
+\end{frame}
+
+\begin{frame}
+	O formato especifica como as colunas devem ser geradas e tem as seguintes opções:
+	
+	l - ajusta à esquerda
+	
+	r - ajusta à direita
+	
+	c - centraliza
+	
+	As linhas verticais são geradas quando na opção do formato usa-se o símbolo |;
+	
+	As colunas são separadas pelo símbolo \&;
+	
+	O fim de uma linha(exceto a última) é executado pelo comando $\backslash\backslash$;
+	
+	Linhas horizontais são geradas com o comando $\backslash$hline após o comando  $\backslash\backslash$;
+	
+	A tabela é ajustada à esquerda na página.
+\end{frame}
+
+\begin{frame}
+	Exemplos de tabela:
+	
+	\vspace{1cm}
+	\begin{tabular}{llc}
+		Nome & Turma & Nota \\
+		\hline
+		João Silva & 10 & 5,0\\
+		Maria da Costa & 10 & 6,5\\
+		Sérgio Brito & 10 & 8,0\\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	Código tabela:
+	
+	\vspace{1cm}
+	
+	begin\{tabular\}\{llc\}
+	
+	Nome \& Turma \& Nota $\backslash\backslash$
+	
+	$\backslash$hline
+	
+	João Silva \& 10 \& 5,0$\backslash\backslash$
+	
+	Maria da Costa \& 10 \& 6,5$\backslash\backslash$
+	
+	Sérgio Brito \& 10 \& 8,0$\backslash\backslash$
+	
+	$\backslash$end\{tabular\}
+\end{frame}
+
+\begin{frame}
+	\begin{tabular}{l|lc}
+		Nome & Turma & Nota \\
+		\hline
+		João Silva & 10 & 5,0\\
+		Maria da Costa & 10 & 6,5\\
+		Sérgio Brito & 10 & 8,0\\
+	\end{tabular}
+	
+	\vspace{1cm}
+	
+	\begin{tabular}{l|l|c}
+		Nome & Turma & Nota \\
+		\hline
+		João Silva & 10 & 5,0\\
+		Maria da Costa & 10 & 6,5\\
+		Sérgio Brito & 10 & 8,0\\
+	\end{tabular}
+	
+\end{frame}
+
+\begin{frame}
+	Utilizando ferramenta para criação de tabelas.
+	
+	\vspace{1cm}
+	
+	\url{https://www.tablesgenerator.com/}
+	
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{Add caption}
+		\begin{tabular}{ccc}
+			\toprule
+			A1    & A2    & A3 \\
+			\midrule
+			1     & 2     & 3 \\
+			3     & 6     & 7 \\
+			4     & 5     & 9 \\
+			\multicolumn{3}{c}{2} \\
+			\bottomrule
+		\end{tabular}%
+		\label{tab:addlabel}%
+	\end{table}%
+	
+\end{frame}
+
+\begin{frame}
+	\begin{table}[H]
+		\centering
+		\caption{Conjunto de cargas da empresa 1}
+		%\vspace{-0.5cm}
+		\begin{tabular}{ccccc}
+			\hline
+			& \textbf{Carga 1} & \textbf{Carga 2} & \textbf{Carga 3} & \textbf{Carga 4} \\ \hline
+			Potência Aparente (VA) & 1500 & 800 & 1200 & 600 \\ \hline
+			Fator de Potência & 0,8 & 0,9 & 0,82 & 0,86 \\ \hline
+		\end{tabular}
+		\label{Tab:carga1}
+	\end{table}
+\end{frame}
+
+\section{Alinhamentos}
+
+\begin{frame}
+	
+	Alinhamentos: para criarmos 
+	um parágrafo alinhado à esquerda ou à direita ou centrado usamos, respectivamente, os seguintes ambientes:
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{flushleft\}
+	
+	$\backslash$end\{flushleft\}
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{flushright\}
+	
+	$\backslash$end\{flushright\}
+	
+	\vspace{1cm}
+	
+	$\backslash$begin\{center\}
+	
+	$\backslash$end\{center\}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Alinhado à esquerda:
+	
+	\begin{flushleft}
+		UNOESC
+	\end{flushleft}
+	
+	Alinhado à direita:
+	
+	\begin{flushright}
+		UNOESC
+	\end{flushright}
+	
+	Centralizado:
+	
+	\begin{center}
+		UNOESC
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	
+	Podemos inserir espaços horizontais e verticais usando os seguintes comandos:
+	
+	\vspace{0.5cm}
+	
+	$\backslash$bigskip : espaço vertical grande.
+	
+	$\backslash$medskip : espaço vertical médio.
+	
+	$\backslash$smallskip : espaço vertical pequeno.
+	
+	$\backslash$vspace\{x\} : espaço vertical de tamanho x cm ou x in.
+	
+	$\backslash$hspace\{x\} : espaço horizontal de tamanho x cm ou x in.
+	
+	$\backslash$hspace\{$\backslash$fill\} : espaço horizontal grande
+	
+	$\backslash$quad : espaço horizontal do tamanho da fonte do documento
+	(por exemplo, 10 pt).
+	
+\end{frame}
+
+\section{Outros itens importantes}
+
+\begin{frame}
+	Para destacarmos pequenos parágrafos, exemplos ou frases usamos o seguinte ambiente:
+	
+	$\backslash$begin\{quote\}
+	
+	$\backslash$end\{quote\}
+	
+	\begin{quote}
+		\textit{``\ldots impossível explicar honestamente as belezas contidas nas leis da natureza de uma forma que as pessoas possam sentí-las sem que elas tenham uma boa compreensão da matemática''.}
+	\end{quote}
+	
+	
+\end{frame}
+
+
+
+\begin{frame}
+	
+ Os comandos matemáticos devem ser inseridos entre o símbolo \$ ou entre $\backslash[ \hspace{0.2cm}\backslash]$.
+	
+\end{frame}
+
+
+\begin{frame}
+	
+	Expoentes e subíndices:
+	
+	\[ x^2 \]
+	\[ a_n \]
+	\[ x^n_i \]
+	\[ A_{i, j, k} \]
+	\[ A_{i, j, k}^{m, l} \]
+\end{frame}
+
+\begin{frame}
+	
+	Expoentes e subíndices nos comandos somatório, limites e integrais:
+	
+	\[ \sum_{i=1}^n x_i \]
+	\[ \lim_{n\rightarrow\infty}a_n \]
+	\[ \int_0^1 f(x) dx \]
+	\[ \max_{0\le x \le 1} g(x) \]
+\end{frame}
+
+\begin{frame}
+	Utilizando \$ e $\backslash$[$\backslash$], utilizar o comando $\backslash$displaystyle 
+	
+	\vspace{0.5cm}
+	
+	$\sum_{i=1}^n x_i $
+	\[ \sum_{i=1}^n x_i \]
+	$\lim_{n\rightarrow\infty}a_n$
+	\[ \lim_{n\rightarrow\infty}a_n \]
+	$\int_0^1 f(x) dx$
+	\[ \int_0^1 f(x) dx \]
+	$\max_{0\le x \le 1} g(x)$
+	\[
+	\max_{0\le x \le 1} g(x)
+	\]
+\end{frame}
+
+\begin{frame}
+	Frações:
+	
+	\begin{center}
+		\[ \frac{x^2+1}{y^3-3} \]
+		\[ \frac{\frac{a+b} {ab}}{1+n} \]
+	\end{center}
+	Utilizando $\backslash$displaystyle :
+	\begin{center}
+		$\frac{x^2+1}{y^3-3}$
+		
+		$\displaystyle\frac{x^2+1}
+		{y^3-3}$
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	Radicais:
+	
+	\[ \sqrt{\frac{x^2+1}
+		{y^3-3}} \]
+	\[ \sqrt[3]{a\sqrt{b+c}} \]
+\end{frame}
+
+\begin{frame}
+	
+	Chaves, Parênteses e Colchetes
+	
+	\[ x[1+x(\frac{1}{2}x+\frac{1}{3}x)x^2] \]
+	
+	\[ x\left[1+x\left(\frac{1}{2}x+\frac{1}{3}x\right)x^2\right] \]
+	
+	
+\end{frame}
+
+\begin{frame}
+	
+	Tamanho das fórmulas:
+	
+	\vspace{1cm}
+	
+	$\backslash$textstyle : tamanho da fórmula tipo texto.
+	
+	$\backslash$scriptstyle : tamanho pequeno.
+	
+	$\backslash$displaystyle : tamanho de exibição da fórmula.
+	
+	$\backslash$scriptscriptstyle : tamanho muito pequeno.
+	
+\end{frame}
+
+\begin{frame}
+	
+	Ambientes matemáticos:
+	
+	(equation)
+	\begin{equation}
+		x = \frac{b\pm\sqrt{b^2-4ac}}{2a}
+	\end{equation}
+	
+	(eqnarray)
+	\begin{eqnarray}
+		\frac{\partial\varphi}{\partial
+			t}-\Delta\varphi & =
+		& \varphi+\varphi^2-\varphi^3\\ \nonumber \\
+		\frac{\partial u}{\partial t}-\Delta u & = & f(x,u)
+	\end{eqnarray}
+	
+\end{frame}
+
+\begin{frame}
+	
+	Matrizes:
+	
+	\[
+	\left[
+	\begin{array}{ccc}
+		1 & 1 & 1 \\
+		x & y & z \\
+		x^2 & y^2 & z^2
+	\end{array}
+	\right]
+	\] 
+	
+	\[
+	\left|
+	\begin{array}{ccc}
+		1 & 1 & 1 \\
+		x & y & z \\
+		x^2 & y^2 & z^2
+	\end{array}
+	\right|
+	\]
+	
+	\[
+	\left\{
+	\begin{array}{lll}
+		2 x + 3 y - z & = & 1 \\
+		x + y + z & = & 0 \\
+		5 x - 2 y - 4 z & = & 2
+	\end{array}
+	\right.
+	\]
+	
+\end{frame}
+
+\begin{frame}
+\url{	http://www.imatheq.com/corpsite/index.html}
+\end{frame}
+
+\begin{frame}
+	
+	Organizando o documento:
+	
+	\vspace{1cm}
+	
+	$\backslash$noindent : alinha o parágrafo à esquerda.
+	
+	$\backslash$pagebreak: quebra páginas.
+	
+	$\backslash$linebreak : quebra linhas.
+	
+	$\backslash$clearpage : quebra páginas com figuras.
+	
+	$\backslash$centering : centraliza em incluir espaços em branco.
+	
+	$\backslash$centerline\{texto\} : centraliza texto.
+	
+	$\backslash$pagenumbering\{estilo\} : especifica o estilo da numeração da página tais como
+	arabic roman e alpha.
+	
+	$\backslash$thispagestyle\{empty\} : não numera localmente a página.
+\end{frame}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Referências %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Referências Bibliográficas}
+%	\bibliographystyle{IEEEtranPTBR}
+%	\bibliography{IEEEabrv,MinhasReferencias}
+
+
+\begin{frame}
+	
+	Exemplo de inserção de Figuras:
+	
+	$\backslash$begin\{figure\}[htb]
+	
+	$\backslash$caption\{Exemplo de Figura\}
+	
+	$\backslash$centering
+	
+	$\backslash$label\{fig:figura1\}
+	
+	$\backslash$includegraphics[scale=0.5]\{figuras/unoesc.jpg\}
+	
+	$\backslash$end\{figure\}
+	
+	\begin{figure}[htb]
+		\caption{Exemplo de Figura}
+		\centering
+		\label{fig:figura1}
+		\includegraphics[scale=0.5]{figuras/unoesc.jpg}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+	Comandos para realizar uma citação no texto:
+	
+	\vspace{1cm}
+	
+	$\backslash$cite\{autor\}
+	
+	$\backslash$citeonline\{autor\}
+	
+	$\backslash$cite\{autor1,autor2\}
+	
+	\vspace{1cm}
+	
+	\url{https://www.jabref.org/}
+\end{frame}
+
+
+\begin{frame}
+	
+	REFERÊNCIAS
+	
+	@MISC\{abntex2-wiki-como-customizar,
+	
+	author = \{abnTeX2\},
+	
+	title = \{Como customizar o abnTeX2\},
+	
+	howpublished = \{Wiki do abnTeX2\},
+	
+	year = \{2013\},
+	
+	url = \{https://code.google.com/p/abntex2/wiki/ComoCustomizar\},
+	
+	urlaccessdate = \{10.7.2013\}
+	
+	\}
+	
+	@techreport\{sadikovic,
+	
+	author = \{R. Sadikovic\},
+	
+	title = \{Damping controller design for power system oscillations\},
+	
+	institution = \{Swiss Federal Institute of Technology\},
+	
+	year = \{2004\},
+	
+	address = \{Zurick\}
+	
+	\}
+\end{frame}
+
+\begin{frame}
+	
+	@BOOK\{livro-unoesc,
+	
+	title = \{Diretrizes para elabora$\backslash$c\{c\}$\backslash$\~{}ao de trabalhos cient$\backslash$\'{}ificos\},
+	
+	publisher = \{Editora Unoesc\},
+	
+	year = \{2013\},
+	
+	author = \{Ardinete Rover and D$\backslash$\'{}ebora Diesmann Silva Pereira\},
+	
+	pages = \{143\},
+	
+	series = \{S$\backslash$\'{}erie Metodologia do trabalho cient$\backslash$\'{}ifico\},
+	
+	address = \{Joa\{$\backslash$c\{c\}\}aba\},
+	
+	\}
+	
+\end{frame}
+
+\begin{frame}
+	@article\{araujo,
+	
+	author = \{P. B. Araujo and L. C. Zaneta\},
+	
+	title = \{Pole placement method using the system matrix transfer
+	function and sparsity\},
+	
+	journal = \{International Journal of Electric Power and Energy Systems\},
+	
+	year = \{2001\},
+	
+	volume = \{23\},
+	
+	number = \{3\},
+	
+	pages = \{173-178\},
+	
+	\}
+\end{frame}
+\begin{frame}
+	
+	@conference\{meikandasivam,
+	
+	author = \{S. Meikandasivam and R. K. Nema and S. K. Jain\},
+	
+	title = \{Performance of Installed TCSC Projects\},
+	
+	publisher = \{International \{C\}onference on \{P\}ower \{E\}lectronics\},
+	
+	year = \{2010\},
+	
+	pages = \{1-8\},
+	
+	address = \{New Delhi\},
+	
+	\}
+	
+\end{frame}
+
+
+\begin{frame}
+	
+	@MANUAL\{abntex2modelo,
+	
+	title = \{Modelo Can$\backslash$\^{}onico de Trabalho Acad$\backslash$\^{}emico com abnTeX2\},
+	
+	author = \{abnTeX2\},
+	
+	organization = \{Equipe abnTeX2\},
+	
+	year = \{2013\},
+	
+	url = \{http://code.google.com/p/abntex2/\},
+	
+	urlaccessdate = \{10.7.2013\}
+	
+	\}
+	
+	@MANUAL\{memoir,
+	
+	title = \{The Memoir Class for Configurable Typesetting - User Guide\},
+	
+	author = \{Peter Wilson and Lars Madsen\},
+	
+	organization = \{The Herries Press\},
+	
+	address = \{Normandy Park, WA\},
+	
+	year = \{2010\},
+	
+	url = \{http://ctan.tche.br/macros/latex/contrib/memoir/memman.pdf\},
+	
+	urlaccessdate = \{19.12.2012\}
+	
+	\}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Igual à Capa %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+
+\end{document}
+
+% Fim do arquivo

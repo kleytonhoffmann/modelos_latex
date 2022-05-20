@@ -1,0 +1,39 @@
+%Use esse arquivo para incluir novos pacotes
+
+\usepackage[%usado para determinar medidas
+top=1.78cm,
+bottom=1.78cm,
+left=1.65cm,
+right=1.65cm,
+headsep=0cm,
+%showframe
+]{geometry}
+%\usepackage[justification=centering]{caption}
+\usepackage{times}
+\usepackage{enumitem}%redefinir espacos itemize
+\usepackage{graphicx}
+\usepackage{url,hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{float}%mais controle para manipular figuras
+\usepackage{caption}%manipular legenda da figura e tabela
+\usepackage{mathtools}%equacoes
+\usepackage[hang,flushmargin]{footmisc} 
+\usepackage{xcolor}
+\usepackage{wrapfig} %usado para envolver figura com texto
+%\usepackage[portuguese]{babel}
+\usepackage{fancyhdr}%criacao do cabecalho
+\usepackage{etoolbox}
+\usepackage[export]{adjustbox}%mais controle para ajustar tamanho da tabela
+\usepackage{comment}%ambiente para comentario
+\usepackage{relsize} %usado por comandos \mathlarger
+\usepackage{lipsum} 
+
+%Referencia bibliografica
+\usepackage[
+    style=numeric,
+    sorting=none,
+    maxbibnames=10]{biblatex}
+\addbibresource{referencia.bib}
+
+%Idioma. Use "english" para trabalhos em inglês
+\usepackage[brazil]{babel}
