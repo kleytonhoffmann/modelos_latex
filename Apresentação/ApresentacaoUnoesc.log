@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.5.20)  20 MAY 2022 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.20)  20 MAY 2022 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./ApresentacaoUnoesc.tex
 (ApresentacaoUnoesc.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-05>
+L3 programming layer <2022-05-04>
 (C:\Program Files\MiKTeX\tex/latex/beamer\beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
 (C:\Program Files\MiKTeX\tex/latex/beamer\beamerbasemodes.sty
@@ -673,7 +673,7 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: babel 2022/04/30 3.74 The Babel package
 \babel@savecnt=\count333
 \U@D=\dimen292
-\l@unhyphenated=\language84
+\l@unhyphenated=\language82
 
 (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
@@ -692,14 +692,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language78). Reported on input line 105.
+(babel)             (\language76). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language78). Reported on input line 108.
+(babel)             (\language76). Reported on input line 108.
 )
 (C:\Program Files\MiKTeX\tex/latex/babel-portuges\brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language61). Reported on input line 111.
+(babel)             (\language59). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
@@ -1454,13 +1454,13 @@ Package rerunfilecheck Info: File `ApresentacaoUnoesc.out' has not changed.
 (rerunfilecheck)             Checksum: C342EFA829CBD8D935CBE1E7C7FF9A48;852.
  ) 
 Here is how much of TeX's memory you used:
- 37316 strings out of 478546
- 879400 string characters out of 2852838
- 1275540 words of memory out of 3000000
- 54635 multiletter control sequences out of 15000+600000
+ 37316 strings out of 478599
+ 879400 string characters out of 2852476
+ 1276159 words of memory out of 3000000
+ 54594 multiletter control sequences out of 15000+600000
  585569 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,23n,122p,805b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,23n,122p,805b,782s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
@@ -1472,7 +1472,7 @@ w/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a
 .pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files
 /MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on ApresentacaoUnoesc.pdf (55 pages, 567222 bytes).
+Output written on ApresentacaoUnoesc.pdf (55 pages, 567300 bytes).
 PDF statistics:
  1978 PDF objects out of 2073 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
