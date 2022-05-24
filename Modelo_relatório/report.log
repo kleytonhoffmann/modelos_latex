@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  20 MAY 2022 09:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.20)  24 MAY 2022 07:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./report.tex
 (report.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-05>
+L3 programming layer <2022-05-04>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (C:\Program Files\MiKTeX\tex/latex/base\size12.clo
@@ -164,10 +164,10 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks29
 )
 (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
+Package: babel 2022/04/30 3.74 The Babel package
 \babel@savecnt=\count276
 \U@D=\dimen150
-\l@unhyphenated=\language84
+\l@unhyphenated=\language82
 
 (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
@@ -183,7 +183,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 (C:\Program Files\MiKTeX\tex/latex/babel-portuges\brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language61). Reported on input line 111.
+(babel)             (\language59). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (C:\Program Files\MiKTeX\tex/latex/here\here.sty)
@@ -210,22 +210,23 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \bigstrutjot=\dimen151
 )
 (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks32
 )
-\captionmargin=\dimen152
-\captionmargin@=\dimen153
-\captionwidth=\dimen154
-\caption@tempdima=\dimen155
-\caption@indent=\dimen156
-\caption@parindent=\dimen157
-\caption@hangindent=\dimen158
+\caption@tempdima=\dimen152
+\captionmargin=\dimen153
+\caption@leftmargin=\dimen154
+\caption@rightmargin=\dimen155
+\caption@width=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count280
@@ -234,9 +235,9 @@ Package caption Info: float package is loaded.
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen159
+\col@sep=\dimen160
 \ar@mcellbox=\box54
-\extrarowheight=\dimen160
+\extrarowheight=\dimen161
 \NC@list=\toks33
 \extratabsurround=\skip67
 \backup@length=\skip68
@@ -324,8 +325,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
@@ -372,8 +373,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )))
 (C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen163
-\WF@size=\dimen164
+\wrapoverhang=\dimen164
+\WF@size=\dimen165
 \c@WF@wrappedlines=\count302
 \WF@box=\box56
 \WF@everypar=\toks34
@@ -388,20 +389,20 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count303
 \Gm@cntv=\count304
 \c@Gm@tempcnt=\count305
-\Gm@bindingoffset=\dimen165
-\Gm@wd@mp=\dimen166
-\Gm@odd@mp=\dimen167
-\Gm@even@mp=\dimen168
-\Gm@layoutwidth=\dimen169
-\Gm@layoutheight=\dimen170
-\Gm@layouthoffset=\dimen171
-\Gm@layoutvoffset=\dimen172
+\Gm@bindingoffset=\dimen166
+\Gm@wd@mp=\dimen167
+\Gm@odd@mp=\dimen168
+\Gm@even@mp=\dimen169
+\Gm@layoutwidth=\dimen170
+\Gm@layoutheight=\dimen171
+\Gm@layouthoffset=\dimen172
+\Gm@layoutvoffset=\dimen173
 \Gm@dimlist=\toks35
 
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Program Files\MiKTeX\tex/latex/hyphenat\hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language85
+\langwohyphens=\language83
 LaTeX Info: Redefining \_ on input line 43.
 )
 (C:\Program Files\MiKTeX\tex/latex/graphics\rotating.sty
@@ -414,26 +415,26 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 )
 (C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen173
-\lightrulewidth=\dimen174
-\cmidrulewidth=\dimen175
-\belowrulesep=\dimen176
-\belowbottomsep=\dimen177
-\aboverulesep=\dimen178
-\abovetopsep=\dimen179
-\cmidrulesep=\dimen180
-\cmidrulekern=\dimen181
-\defaultaddspace=\dimen182
+\heavyrulewidth=\dimen174
+\lightrulewidth=\dimen175
+\cmidrulewidth=\dimen176
+\belowrulesep=\dimen177
+\belowbottomsep=\dimen178
+\aboverulesep=\dimen179
+\abovetopsep=\dimen180
+\cmidrulesep=\dimen181
+\cmidrulekern=\dimen182
+\defaultaddspace=\dimen183
 \@cmidla=\count307
 \@cmidlb=\count308
-\@aboverulesep=\dimen183
-\@belowrulesep=\dimen184
+\@aboverulesep=\dimen184
+\@belowrulesep=\dimen185
 \@thisruleclass=\count309
 \@lastruleclass=\count310
-\@thisrulewidth=\dimen185
+\@thisrulewidth=\dimen186
 )
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box58
 )
@@ -444,20 +445,20 @@ LaTeX Warning: Unused global option(s):
 (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -465,13 +466,13 @@ Package caption Info: End \AtBeginDocument code.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count312
-\scratchdimen=\dimen186
+\scratchdimen=\dimen187
 \scratchbox=\box59
 \nofMPsegments=\count313
 \nofMParguments=\count314
 \everyMPshowfont=\toks37
 \MPscratchCnt=\count315
-\MPscratchDim=\dimen187
+\MPscratchDim=\dimen188
 \MPnumerator=\count316
 \makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks38
@@ -513,19 +514,19 @@ Package caption Info: End \AtBeginDocument code.
 <figuras/eletrica.jpg, id=1, 380.92313pt x 109.91063pt>
 File: figuras/eletrica.jpg Graphic file (type jpg)
 <use figuras/eletrica.jpg>
-Package pdftex.def Info: figuras/eletrica.jpg  used on input line 132.
+Package pdftex.def Info: figuras/eletrica.jpg  used on input line 118.
 (pdftex.def)             Requested size: 152.36655pt x 43.96346pt.
 
-Overfull \hbox (67.00829pt too wide) in paragraph at lines 132--133
+Overfull \hbox (67.00829pt too wide) in paragraph at lines 118--119
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 146
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 146
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -539,13 +540,13 @@ Package epstopdf Info: Source file: <figuras/circuito.eps>
 (epstopdf)                    size: 28366 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/circuito-eps
 -converted-to.pdf figuras/circuito.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 <figuras/circuito-eps-converted-to.pdf, id=2, 318.18875pt x 123.46124pt>
 File: figuras/circuito-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/circuito-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/circuito-eps-converted-to.pdf  used on input l
-ine 170.
+ine 156.
 (pdftex.def)             Requested size: 318.18796pt x 123.46092pt.
  [1
 
@@ -559,22 +560,22 @@ Package epstopdf Info: Source file: <figuras/circuito.eps>
 (epstopdf)                    size: 28366 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/circuito-eps
 -converted-to.pdf figuras/circuito.eps>
-(epstopdf)             \includegraphics on input line 257.
+(epstopdf)             \includegraphics on input line 243.
 Package epstopdf Info: Output file is already uptodate.
 File: figuras/circuito-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/circuito-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/circuito-eps-converted-to.pdf  used on input l
-ine 257.
+ine 243.
 (pdftex.def)             Requested size: 318.18796pt x 123.46092pt.
  [2] (report.bbl) [3] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 7396 strings out of 478546
- 130372 string characters out of 2852838
- 439629 words of memory out of 3000000
- 25418 multiletter control sequences out of 15000+600000
+ 7480 strings out of 478599
+ 132004 string characters out of 2852476
+ 440537 words of memory out of 3000000
+ 25461 multiletter control sequences out of 15000+600000
  476406 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,63p,487b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,63p,487b,412s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/cm
 -super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
