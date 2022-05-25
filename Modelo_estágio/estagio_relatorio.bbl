@@ -1,0 +1,36 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Brasil 2005]{NR10}
+\abntrefinfo{Brasil}{BRASIL}{2005}
+{BRASIL. \textbf{NR 10 - Seguran\c{c}a em instala\c{c}\~{o}es e servi\c{c}os em
+  eletricidade}.
+Di\'{a}rio Oficial da Uni\~{a}o, Bras\'{i}lia, DF, 08 set., 2005.
+  Dispon{\'\i}vel em:
+  \url{http://portal.mte.gov.br/data/files/8A7C812D308E216601310641F67629F4/nr_10.pdf}.
+  Acesso em: 24.03.2014.}
+
+\bibitem[Luckmann, ROVER e VARGAS 2008]{LUCKMANN2008}
+\abntrefinfo{Luckmann, ROVER e VARGAS}{LUCKMANN; ROVER; VARGAS}{2008}
+{LUCKMANN, Luiz~Carlos; ROVER, Ardinete; VARGAS, Marisa. \textbf{Diretrizes
+  para elabora{\c{c}}{\~a}o de trabalhos cient{\'\i}ficos}. Joa{\c{c}}aba: Ed.
+  Unoesc, 2008.}
+
+\bibitem[Rover e Pereira 2013]{livro-unoesc}
+\abntrefinfo{Rover e Pereira}{ROVER; PEREIRA}{2013}
+{ROVER, Ardinete; PEREIRA, Débora Diesmann~Silva. \textbf{Diretrizes para
+  elaboração de trabalhos científicos}. Joa{\c{c}}aba: Editora Unoesc, 2013.
+  143~p.  (Série Metodologia do trabalho científico).}
+
+\bibitem[Umans 2014]{fitzgerald2014}
+\abntrefinfo{Umans}{UMANS}{2014}
+{UMANS, S.D. \textbf{M{\'a}quinas El{\'e}tricas de Fitzgerald e Kingsley -
+  7.ed.:}. AMGH Editora, 2014.
+ISBN 9788580553741. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=3Fa2AwAAQBAJ}.}
+
+\end{thebibliography}

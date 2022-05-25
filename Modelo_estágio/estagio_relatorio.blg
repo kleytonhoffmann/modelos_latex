@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: estagio_relatorio.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: conteudo/apresentacao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: conteudo/atividades.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: conteudo/conclusao.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+The style file: abntex2/abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2/abntex2-options.bib
+Database file #2: referencias.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v<VERSION>           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 10 entries,
+            6667 wiz_defined-function locations,
+            1228 strings with 10285 characters,
+and the built_in function-call counts, 5075 in all, are:
+= -- 514
+> -- 114
+< -- 1
++ -- 95
+- -- 36
+* -- 300
+:= -- 707
+add.period$ -- 18
+call.type$ -- 10
+change.case$ -- 54
+chr.to.int$ -- 9
+cite$ -- 4
+duplicate$ -- 192
+empty$ -- 474
+format.name$ -- 163
+if$ -- 1281
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 135
+newline$ -- 26
+num.names$ -- 20
+pop$ -- 143
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 429
+stack$ -- 1
+substring$ -- 148
+swap$ -- 65
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 26
+width$ -- 0
+write$ -- 70
